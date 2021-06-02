@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>javascript satellite orbit</title>
+<link href="../../_common/images/favicon.ico" rel="shortcut icon">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/container.css" rel="stylesheet">
+<script src=js/backmath2.js></script>
+<script src=js/canvas1.js></script>
+<script src=js/canvas2.js></script>
+<script src=js/canvas3.js></script>
+<script src=js/canvas4.js></script>
+</head>
+
+<body>
+
+<section class="container1">
+
+        <div class="site">
+            <h1><a href="#">衛星軌道</a></h1>
+        </div>
+
+        <label for="disp-btn1" id="btn1">第一宇宙速度</label>
+        <label for="disp-btn2" id="btn2" onclick="start('btn2')">第二宇宙速度</label>
+        <label for="disp-btn3" id="btn3">楕円軌道</label>
+        <label for="disp-btn4" id="btn4">静止衛星軌道</label>    
+        <input type="checkbox" id="disp-btn1">
+        <input type="checkbox" id="disp-btn2">
+        <input type="checkbox" id="disp-btn3">
+        <input type="checkbox" id="disp-btn4">
+
+    <section class="containerA">
+        <section class="container2">
+
+            <canvas id="img"
+                    width="640"
+                    height="480"
+                    style="border: solid 1px #000000;
+                            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+                            border-radius: 3px;">
+            </canvas>
+            
+            <canvas id="canvas1" class="disp-canvas1"
+                    width="640"
+                    height="480"
+                    style="border: solid 1px #000000;
+                        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+                        border-radius: 3px;">
+            </canvas>
+
+            <canvas id="canvas2" class="disp-canvas2"
+                    width="640"
+                    height="480"
+                    style="border: solid 1px #000000;
+                        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+                        border-radius: 3px;">
+            </canvas>
+
+            <canvas id="canvas3" class="disp-canvas3"
+                    width="640"
+                    height="480"
+                    style="border: solid 1px #000000;
+                        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+                        border-radius: 3px;">
+            </canvas>
+
+            <canvas id="canvas4" class="disp-canvas4"
+                    width="640"
+                    height="480"
+                    style="border: solid 1px #000000;
+                        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+                        border-radius: 3px;">
+            </canvas>
+
+            <div class="trim-image-to-circle">
+                <link href="css/ball.css" rel="stylesheet">
+            </div>
+
+        </section>
+
+        <div class="container3">
+            <article class="ditails">
+                <h1>・第一宇宙速度</h1>
+                <p>軌道半径　6378km</p>
+                <p>初速度　7.9km/s</p>
+                <h1>・第二宇宙速度 地球脱出</h1>
+                <p>初速度　11.18km/s</p>
+                <h1>・楕円軌道</h1>
+                <p>軌道近地点半径　6378km</p>
+                <p>初速度　10km/s</p>
+                <h1>・静止衛星軌道</h1>
+                <p>軌道半径　42164km</p>
+                <p>初速度　3.0km/s</p>
+            </article>
+        </div>
+
+    </section>
+
+    
+</section>
+
+</body>
+</html>
