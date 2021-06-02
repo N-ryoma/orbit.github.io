@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    font-family: "メイリオ","Hiragino Kaku Gothic Pro",sans-serif
+}
+
+.site h1 a {
+    color: #f7f3f3;
+    text-decoration: none;
+}
+
+.site h1 {
+    padding-top: 10px;
+    margin-left: 40px;
+    font-size: 30px;
+}
+
